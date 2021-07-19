@@ -5,7 +5,7 @@ const getNames = async (dataName) => {
     
    //return await axios.get('http://localhost:5000/client') 
 
-   let dataToFetch = `http://localhost:5000/${dataName}`
+   let dataToFetch = `https://my-json-server.typicode.com/mahesh-dev23/soham-react/${dataName}`
     
 
     const res = await fetch(dataToFetch)
