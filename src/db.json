@@ -1,0 +1,400 @@
+{
+  "client": [
+    {
+      "clientName": "Sadguru Trading",
+      "consigner": [
+        "HR"
+      ],
+      "id": 1
+    },
+    {
+      "clientName": "Mukhtar",
+      "consigner": [
+        "Mukhtar"
+      ],
+      "id": 2
+    },
+    {
+      "clientName": "Raj",
+      "consigner": [
+        "Raj",
+        "Sunil"
+      ],
+      "id": 3
+    },
+    {
+      "clientName": "Abbas",
+      "consigner": [
+        "Abbas",
+        "Abb"
+      ],
+      "id": 4
+    },
+    {
+      "clientName": "Zaif Garment",
+      "consigner": [
+        "Chand",
+        "Ravi",
+        "Mangal"
+      ],
+      "id": 5
+    },
+    {
+      "id": 6,
+      "clientName": "Rabiu",
+      "consigner": [
+        "Rabiu Mumbai"
+      ]
+    },
+    {
+      "id": 7,
+      "clientName": "Tausif Bhai",
+      "consigner": [
+        "Tausif",
+        "Azhary"
+      ]
+    },
+    {
+      "id": 8,
+      "clientName": "AHS",
+      "consigner": [
+        "AHS"
+      ]
+    },
+    {
+      "id": 9,
+      "clientName": "Osman",
+      "consigner": [
+        "Osman"
+      ]
+    },
+    {
+      "id": 10,
+      "clientName": "Rajan",
+      "consigner": [
+        "Rajan"
+      ]
+    },
+    {
+      "id": 11,
+      "clientName": "Sainath",
+      "consigner": [
+        "Sainath"
+      ]
+    },
+    {
+      "id": 12,
+      "clientName": "RohraTrading",
+      "consigner": [
+        "Kamal"
+      ]
+    },
+    {
+      "id": 13,
+      "clientName": "Kiran Traders",
+      "consigner": [
+        "ABC"
+      ]
+    },
+    {
+      "id": 14,
+      "clientName": "Kumar",
+      "consigner": [
+        "Kumar"
+      ]
+    },
+    {
+      "clientName": "Farhan",
+      "consigner": [
+        "GK",
+        "BMW"
+      ],
+      "id": 15
+    },
+    {
+      "id": 16,
+      "clientName": "Mahek Dadar",
+      "consigner": [
+        "Mahek"
+      ]
+    },
+    {
+      "clientName": "Azra",
+      "consigner": [
+        "Azra"
+      ],
+      "id": 17
+    },
+    {
+      "clientName": "Fashion World",
+      "consigner": [
+        "ABZ"
+      ],
+      "id": 18
+    },
+    {
+      "clientName": "Ajay Bag",
+      "consigner": [
+        "Ajay Bag"
+      ],
+      "id": 19
+    },
+    {
+      "id": 20,
+      "clientName": "Mishra Ambhuj",
+      "consigner": [
+        "Mishra Ambhuj"
+      ]
+    },
+    {
+      "clientName": "Raju Bhai",
+      "consigner": [
+        "Arjun"
+      ],
+      "id": 21
+    },
+    {
+      "clientName": "Pankaj Ulhasnagar",
+      "consigner": [
+        "Pankaj Ulhasnagar"
+      ],
+      "id": 22
+    },
+    {
+      "clientName": "MMM",
+      "consigner": [
+        "MMM"
+      ],
+      "id": 23
+    },
+    {
+      "clientName": "Vinod Hina",
+      "consigner": [
+        "Hayat"
+      ],
+      "id": 24
+    },
+    {
+      "clientName": "Mahesh Trading",
+      "consigner": [
+        "Mahesh"
+      ],
+      "id": 25
+    }
+  ],
+  "consignee": [],
+  "consignments": [
+    {
+      "client": "Kumar/03/01 U/1",
+      "consigner": "Kumar",
+      "consignee": "KSBS",
+      "loading": "01/01/2021",
+      "uloading": "03/01/2021",
+      "load": 1609439400000,
+      "unload": 1609612200000,
+      "Pod": "03/01 U",
+      "package": "22",
+      "package1": "15",
+      "weight": "2064",
+      "cWeight": "2064",
+      "rate": "15",
+      "amount": 30960,
+      "payment": "Paid",
+      "remark": "",
+      "tempo": "MH-04 HD-2894",
+      "delivery": "16/07/2021",
+      "book": "2",
+      "page": "17",
+      "id": 1
+    },
+    {
+      "client": "Fashion World/03/01 U/2",
+      "consigner": "ABZ",
+      "consignee": "KSBS",
+      "loading": "01/01/2021",
+      "uloading": "03/01/2021",
+      "load": 1609439400000,
+      "unload": 1609612200000,
+      "Pod": "03/01 U",
+      "package": "7",
+      "package1": "0",
+      "weight": "821",
+      "cWeight": "821",
+      "rate": "17",
+      "amount": 13957,
+      "payment": "To Pay",
+      "remark": "",
+      "tempo": "MH-43 BB-0254",
+      "delivery": "14/07/2021",
+      "delv": 1626201000000,
+      "book": "undefined",
+      "page": "undefined",
+      "id": 2
+    },
+    {
+      "client": "Fashion World/03/01 U/3",
+      "consigner": "ABZ",
+      "consignee": "KSBS",
+      "loading": "01/01/2021",
+      "uloading": "03/01/2021",
+      "load": 1609439400000,
+      "unload": 1609612200000,
+      "Pod": "03/01 U",
+      "package": "7",
+      "package1": "0",
+      "weight": "700",
+      "cWeight": "700",
+      "rate": "17",
+      "amount": 11900,
+      "payment": "To Pay",
+      "remark": "",
+      "tempo": "MH-43 BB-0254",
+      "delivery": "15/07/2021",
+      "delv": 1626287400000,
+      "book": "undefined",
+      "page": "undefined",
+      "id": 3
+    },
+    {
+      "client": "Zaif Garment/08/07 U/4",
+      "consigner": "Ravi",
+      "consignee": "KSBS",
+      "loading": "06/07/2021",
+      "uloading": "08/07/2021",
+      "load": 1625509800000,
+      "unload": 1625682600000,
+      "Pod": "08/07 U",
+      "package": "10",
+      "package1": "10",
+      "weight": "530",
+      "cWeight": "500",
+      "rate": "17",
+      "amount": 8500,
+      "payment": "Paid",
+      "remark": "Jute Bags",
+      "tempo": "MH 01 3200",
+      "delivery": "17/07/2021",
+      "delv": 1626460200000,
+      "book": "undefined",
+      "page": "undefined",
+      "id": 4
+    },
+    {
+      "client": "Mukhtar/15/07 U/5",
+      "consigner": "Mukhtar",
+      "consignee": "LOTU",
+      "loading": "13/07/2021",
+      "uloading": "15/07/2021",
+      "load": 1626114600000,
+      "unload": 1626287400000,
+      "Pod": "15/07 U",
+      "package": "7",
+      "package1": "7",
+      "weight": "634",
+      "cWeight": "500",
+      "rate": "23",
+      "amount": 11500,
+      "payment": "To Pay",
+      "remark": "",
+      "tempo": "",
+      "delivery": "16/07/2021",
+      "book": "2",
+      "page": "18",
+      "id": 5
+    },
+    {
+      "client": "Rabiu/10/07 U/6",
+      "consigner": "Rabiu Mumbai",
+      "consignee": "Lotu",
+      "loading": "08/07/2021",
+      "uloading": "10/07/2021",
+      "load": 1625682600000,
+      "unload": 1625855400000,
+      "Pod": "10/07 U",
+      "package": "1",
+      "package1": "0",
+      "weight": "113",
+      "cWeight": "100",
+      "rate": "12",
+      "amount": 1200,
+      "payment": "Paid",
+      "remark": "",
+      "tempo": "",
+      "delivery": "12/07/2021",
+      "delv": 1626028200000,
+      "book": "2",
+      "page": "18",
+      "id": 6
+    },
+    {
+      "client": "AHS/10/07 U/7",
+      "consigner": "AHS",
+      "consignee": "Direct",
+      "loading": "08/07/2021",
+      "uloading": "10/07/2021",
+      "load": 1625682600000,
+      "unload": 1625855400000,
+      "Pod": "10/07 U",
+      "package": "3",
+      "package1": "3",
+      "weight": "300",
+      "cWeight": "300",
+      "rate": "24",
+      "amount": 7200,
+      "payment": "To Pay",
+      "remark": "",
+      "tempo": "",
+      "delivery": "15/07/2021",
+      "book": "2",
+      "page": "18",
+      "id": 7
+    },
+    {
+      "client": "Osman/15/07 U/8",
+      "consigner": "Osman",
+      "consignee": "Lotu",
+      "loading": "13/07/2021",
+      "uloading": "15/07/2021",
+      "load": 1626114600000,
+      "unload": 1626287400000,
+      "Pod": "15/07 U",
+      "package": "4",
+      "package1": "4",
+      "weight": "400",
+      "cWeight": "400",
+      "rate": "17",
+      "amount": 6800,
+      "payment": "To Pay",
+      "remark": "",
+      "tempo": "",
+      "delivery": "17/07/2021",
+      "book": "2",
+      "page": "18",
+      "id": 8
+    },
+    {
+      "client": "Rajan/13/07 U/9",
+      "consigner": "Rajan",
+      "consignee": "KSBS",
+      "loading": "11/07/2021",
+      "uloading": "13/07/2021",
+      "load": 1625941800000,
+      "unload": 1626114600000,
+      "Pod": "13/07 U",
+      "package": "1",
+      "package1": "0",
+      "weight": "100",
+      "cWeight": "100",
+      "rate": "17",
+      "amount": 1700,
+      "payment": "To Pay",
+      "remark": "",
+      "tempo": "",
+      "delivery": "14/07/2021",
+      "delv": 1626201000000,
+      "book": "2",
+      "page": "18",
+      "id": 9
+    }
+  ]
+}
