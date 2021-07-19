@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/soham-react/static/css/main.6b771292.chunk.css",
-    "main.js": "/soham-react/static/js/main.c37c2905.chunk.js",
-    "main.js.map": "/soham-react/static/js/main.c37c2905.chunk.js.map",
+    "main.js": "/soham-react/static/js/main.3bdfeb81.chunk.js",
+    "main.js.map": "/soham-react/static/js/main.3bdfeb81.chunk.js.map",
     "runtime-main.js": "/soham-react/static/js/runtime-main.d4e926a8.js",
     "runtime-main.js.map": "/soham-react/static/js/runtime-main.d4e926a8.js.map",
     "static/css/2.61275564.chunk.css": "/soham-react/static/css/2.61275564.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.61275564.chunk.css",
     "static/js/2.c1eb1d6d.chunk.js",
     "static/css/main.6b771292.chunk.css",
-    "static/js/main.c37c2905.chunk.js"
+    "static/js/main.3bdfeb81.chunk.js"
   ]
 }
