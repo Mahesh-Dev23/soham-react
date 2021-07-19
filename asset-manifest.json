@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/soham-react/static/css/main.33ba3cb7.chunk.css",
-    "main.js": "/soham-react/static/js/main.7d2f242e.chunk.js",
-    "main.js.map": "/soham-react/static/js/main.7d2f242e.chunk.js.map",
-    "runtime-main.js": "/soham-react/static/js/runtime-main.58c6a1ef.js",
-    "runtime-main.js.map": "/soham-react/static/js/runtime-main.58c6a1ef.js.map",
-    "static/js/2.041967dd.chunk.js": "/soham-react/static/js/2.041967dd.chunk.js",
-    "static/js/2.041967dd.chunk.js.map": "/soham-react/static/js/2.041967dd.chunk.js.map",
-    "static/js/3.8234a791.chunk.js": "/soham-react/static/js/3.8234a791.chunk.js",
-    "static/js/3.8234a791.chunk.js.map": "/soham-react/static/js/3.8234a791.chunk.js.map",
+    "main.css": "/soham-react/static/css/main.6b771292.chunk.css",
+    "main.js": "/soham-react/static/js/main.c37c2905.chunk.js",
+    "main.js.map": "/soham-react/static/js/main.c37c2905.chunk.js.map",
+    "runtime-main.js": "/soham-react/static/js/runtime-main.d4e926a8.js",
+    "runtime-main.js.map": "/soham-react/static/js/runtime-main.d4e926a8.js.map",
+    "static/css/2.61275564.chunk.css": "/soham-react/static/css/2.61275564.chunk.css",
+    "static/js/2.c1eb1d6d.chunk.js": "/soham-react/static/js/2.c1eb1d6d.chunk.js",
+    "static/js/2.c1eb1d6d.chunk.js.map": "/soham-react/static/js/2.c1eb1d6d.chunk.js.map",
+    "static/js/3.f6129f84.chunk.js": "/soham-react/static/js/3.f6129f84.chunk.js",
+    "static/js/3.f6129f84.chunk.js.map": "/soham-react/static/js/3.f6129f84.chunk.js.map",
     "index.html": "/soham-react/index.html",
-    "static/css/main.33ba3cb7.chunk.css.map": "/soham-react/static/css/main.33ba3cb7.chunk.css.map",
-    "static/js/2.041967dd.chunk.js.LICENSE.txt": "/soham-react/static/js/2.041967dd.chunk.js.LICENSE.txt",
+    "static/css/2.61275564.chunk.css.map": "/soham-react/static/css/2.61275564.chunk.css.map",
+    "static/css/main.6b771292.chunk.css.map": "/soham-react/static/css/main.6b771292.chunk.css.map",
+    "static/js/2.c1eb1d6d.chunk.js.LICENSE.txt": "/soham-react/static/js/2.c1eb1d6d.chunk.js.LICENSE.txt",
     "static/media/bg.62641cf2.jpg": "/soham-react/static/media/bg.62641cf2.jpg",
     "static/media/siddhivinayak.b5adc4f7.png": "/soham-react/static/media/siddhivinayak.b5adc4f7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.58c6a1ef.js",
-    "static/js/2.041967dd.chunk.js",
-    "static/css/main.33ba3cb7.chunk.css",
-    "static/js/main.7d2f242e.chunk.js"
+    "static/js/runtime-main.d4e926a8.js",
+    "static/css/2.61275564.chunk.css",
+    "static/js/2.c1eb1d6d.chunk.js",
+    "static/css/main.6b771292.chunk.css",
+    "static/js/main.c37c2905.chunk.js"
   ]
 }
