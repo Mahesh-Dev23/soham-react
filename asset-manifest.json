@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/soham-react/static/css/main.a617e044.chunk.css",
+    "main.js": "/soham-react/static/js/main.ec541c9a.chunk.js",
+    "main.js.map": "/soham-react/static/js/main.ec541c9a.chunk.js.map",
+    "runtime-main.js": "/soham-react/static/js/runtime-main.ef544798.js",
+    "runtime-main.js.map": "/soham-react/static/js/runtime-main.ef544798.js.map",
+    "static/js/2.eb7e17ff.chunk.js": "/soham-react/static/js/2.eb7e17ff.chunk.js",
+    "static/js/2.eb7e17ff.chunk.js.map": "/soham-react/static/js/2.eb7e17ff.chunk.js.map",
+    "static/js/3.625f480e.chunk.js": "/soham-react/static/js/3.625f480e.chunk.js",
+    "static/js/3.625f480e.chunk.js.map": "/soham-react/static/js/3.625f480e.chunk.js.map",
+    "index.html": "/soham-react/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/soham-react/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.eb7e17ff.chunk.js.LICENSE.txt": "/soham-react/static/js/2.eb7e17ff.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/soham-react/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef544798.js",
+    "static/js/2.eb7e17ff.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.ec541c9a.chunk.js"
+  ]
+}
