@@ -5,31 +5,31 @@ import addLoop from '../functions/add'
 function PendingBills({wid}) {
     const captureConsignmentsFromData = useContext(Consignments)
 
-    const [consignmentCaptured, setConsignmentCaptured] = useState([])
+    //const [consignmentCaptured, setConsignmentCaptured] = useState([])
     const [perClient, setPerClient] = useState([])
     const [sortValue, setSortValue] = useState()
     const [total, setTotal] = useState([])
 
-    const getUnpaidList = (total, value, index, array) => {
-        setConsignmentCaptured(
-        captureConsignmentsFromData.map(res => res ?
-            {   client: res.client,
-                consigner: res.consigner,
-                consignee: res.consignee, 
-                PoD: res.Pod, 
-                package: res.package,
-                package1: res.package1,
-                weight: res.weight,
-                cWeight: res.cWeight,
-                rate: res.rate,
-                remark: res.remark,
-                payment: res.payment,
-                amount:res.amount,
-                loading: res.loading,
-                UnLoading: res.uloading,
-                id: res.id
-            } : '')
-        )
+    const getUnpaidList = () => {
+        // setConsignmentCaptured(
+        // captureConsignmentsFromData.map(res => res ?
+        //     {   client: res.client,
+        //         consigner: res.consigner,
+        //         consignee: res.consignee, 
+        //         PoD: res.Pod, 
+        //         package: res.package,
+        //         package1: res.package1,
+        //         weight: res.weight,
+        //         cWeight: res.cWeight,
+        //         rate: res.rate,
+        //         remark: res.remark,
+        //         payment: res.payment,
+        //         amount:res.amount,
+        //         loading: res.loading,
+        //         UnLoading: res.uloading,
+        //         id: res.id
+        //     } : '')
+        // )
         setPerClient( captureConsignmentsFromData.map(resConsgn => 
             resConsgn.payment != "Paid" ? 
                         {"client":resConsgn.client, "amount": resConsgn.rate * resConsgn.cWeight }
@@ -65,7 +65,7 @@ function PendingBills({wid}) {
         }
     }
     arraySort()
-    console.log("sort " + sortedClient)
+    //console.log("sort " + sortedClient)
 
     useEffect(()=>{ getUnpaidList() },[captureConsignmentsFromData]) 
     useEffect(()=>{ arraySort() },[sortValue])  
@@ -88,12 +88,28 @@ function PendingBills({wid}) {
                     Lower
             </button>
             <div style={{color:"#dc143c"}}>
-                { sortedClient.map(res =>   <div className="pClient" style={{height:"35px", display:"block"}}>
-                                            <h4 style={{width: "200px",float:"left", margin: "0", padding: "0"}} >
-                                                <span style={{width: "200px", textAlign: "left"}}>{`${res.client}: `}</span>
-                                            </h4>
-                                            <h4 style={{textAlign: "right", float:"left", margin: "0", padding: "0"}}>{`Rs. ${res.amount}`}</h4> 
-                                            </div> )}
+                { sortedClient.map(res =>   
+                    <div  key = {res.client}
+                        className="pClient" 
+                        style={{height:"35px", 
+                                display:"block"}}>
+                        <h4 
+                            style={{width: "200px",
+                                    float:"left", 
+                                    margin: "0", 
+                                    padding: "0"}} >
+                            <span style={{width: "200px", textAlign: "left"}}>
+                                {`${res.client}: `}
+                            </span>
+                        </h4>
+                        <h4 style={{textAlign: "right", 
+                                    float:"left", 
+                                    margin: "0", 
+                                    padding: "0"}}>
+                            {`Rs. ${res.amount}`}
+                        </h4> 
+                    </div> 
+                )}
             </div>
         </div>
     )

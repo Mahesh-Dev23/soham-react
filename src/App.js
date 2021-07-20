@@ -24,7 +24,7 @@ toast.configure()
 
 
 function App() {
-  
+ // console.clear()
   const display = {
     displayFrame:'',
     modal: false,
@@ -101,8 +101,8 @@ function App() {
   const loadConsigments = (v) => getNames(v).then(res => setConsignment(res))
   
   useEffect(() => { 
-    loadNames(newState.client ? newState.client : display.client)
-    loadConsigments(newState.consignments ? newState.consignments : display.consignments)
+    loadNames(newState.client ? newState.client :'')
+    loadConsigments(newState.consignments ? newState.consignments : '')
   },[newState.modal])
  
   const setDateBracket = (v) =>  {
@@ -116,9 +116,8 @@ function App() {
       loadConsigments("consignments")
     }
   }
-  
+    
   useEffect(() =>{ 
-    searchTermFilter()
     console.log(newState.searchTerm)
     },[newState.searchTerm])
   
@@ -126,15 +125,18 @@ function App() {
     setLoad( Date.parse(newState.startDate) )
     setUnLoad( Date.parse(newState.endDate) )
   }
-  useEffect(()=>{loadingUnloading() },[])
+  useEffect(()=>{
+    loadingUnloading() 
+    searchTermFilter()
+  },[])
 
   useEffect(() =>{ 
     loadingUnloading() 
     setDateBracket()
   },[newState.startDate, newState.endDate])
   
-  console.log( loading + "," + unloading )
-  console.log( load + "," + unLoad )
+  //console.log( loading + "," + unloading )
+  //console.log( load + "," + unLoad )
 
 
   const displayRoute = newState.displayFrame === "Main" ? <Main modalOut={newState.modal} modalContentOut={newState.modalContent} colorsStates = {colorsStates} todayInSeconds={todayInSeconds}/> : 
