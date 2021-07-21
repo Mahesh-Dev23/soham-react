@@ -1,7 +1,6 @@
 import React, {useState, useContext, useEffect} from 'react'
 import { ClientNames } from '../../App'
 import { Consignments } from '../../App'
-import getConsignments from '../crud/consignmentApi'
 import consignmentArraySort from '../functions/consignmentArraySort'
 
 
@@ -38,17 +37,17 @@ function SelectPrint({clientPrint, consPrint, onclick}) {
     }
     
     
-    const consignementDisplay = () =>{
-        setSelectedCons( captureConsData.map(cons => 
-                    { if(cons.client.startsWith( clientName ? clientName : firstClient ) ){
-                        return cons
-                    }}
-                ))
+    // const consignementDisplay = () =>{
+    //     setSelectedCons( captureConsData.map(cons => 
+    //                 { if(cons.client.startsWith( clientName ? clientName : firstClient ) ){
+    //                     return cons
+    //                 }}
+    //             ))
       
-    }
-    const consChange = (v) =>{
-        setConsDisplay({...consDisplay, v})
-    }
+    // }
+    // const consChange = (v) =>{
+    //     setConsDisplay({...consDisplay, v})
+    // }
     
     
     let collect = []
@@ -83,8 +82,11 @@ function SelectPrint({clientPrint, consPrint, onclick}) {
                         {selectedCons ? selectedCons.map(data => 
                             <div className="form-group" onChange={e=>collectConst(e.target.value)}>
                                 <label className="checkbox-label" for={data.client} key={data.client}>
-                                    <input type="checkbox" id={data.client}  name={data.client} 
-                                    value={`${data.client}, ${data.consigner}, ${data.consignee}, ${data.Pod}, ${data.package}, ${data.cWeight}, ${data.amount}, ${data.rate}, ${data.book}, ${data.page}`}></input> 
+                                    <input 
+                                        type="checkbox" id={data.client}  
+                                        name={data.client} 
+                                        value={`${data.client}, ${data.consigner}, ${data.consignee}, ${data.Pod}, ${data.package}, ${data.cWeight}, ${data.amount}, ${data.rate}, ${data.book}, ${data.page}`}>
+                                    </input> 
                                     <span className="checkmark"></span>
                                     {`${data.client}, ${data.Pod}, Rs.${data.amount}`}
                                 </label></div>)

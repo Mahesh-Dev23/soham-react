@@ -13,13 +13,13 @@ function Schedule({closeSchedule}) {
             <div>
                 <h4>Delivery Today</h4>  
                 { captureConsignmentsFromData.map(res =>
-                     res.delv === today ? <h5>{`${res.client}, Pkg: ${res.package}`}</h5> : null
+                     res.delv === today ? <h5 key={res.client}>{`${res.client}, Pkg: ${res.package}`}</h5> : null
                     )}
             </div>
             <div style={{marginTop:"10px"}}>
                 <h4>Unloading Today</h4> 
                 { captureConsignmentsFromData.map(res =>
-                    res.unload === today ? <h5>{`${res.client}, Pkg: ${res.package}`}</h5> : null
+                    res.unload === today ? <h5 key={res.client}>{`${res.client}, Pkg: ${res.package}`}</h5> : null
                     )}
             </div>
             <button type="button"  className="roundButton" onClick={() => closeUpdates(false)}> X </button>

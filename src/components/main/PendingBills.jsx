@@ -5,31 +5,12 @@ import addLoop from '../functions/add'
 function PendingBills({wid}) {
     const captureConsignmentsFromData = useContext(Consignments)
 
-    //const [consignmentCaptured, setConsignmentCaptured] = useState([])
     const [perClient, setPerClient] = useState([])
     const [sortValue, setSortValue] = useState()
     const [total, setTotal] = useState([])
 
     const getUnpaidList = () => {
-        // setConsignmentCaptured(
-        // captureConsignmentsFromData.map(res => res ?
-        //     {   client: res.client,
-        //         consigner: res.consigner,
-        //         consignee: res.consignee, 
-        //         PoD: res.Pod, 
-        //         package: res.package,
-        //         package1: res.package1,
-        //         weight: res.weight,
-        //         cWeight: res.cWeight,
-        //         rate: res.rate,
-        //         remark: res.remark,
-        //         payment: res.payment,
-        //         amount:res.amount,
-        //         loading: res.loading,
-        //         UnLoading: res.uloading,
-        //         id: res.id
-        //     } : '')
-        // )
+        
         setPerClient( captureConsignmentsFromData.map(resConsgn => 
             resConsgn.payment != "Paid" ? 
                         {"client":resConsgn.client, "amount": resConsgn.rate * resConsgn.cWeight }

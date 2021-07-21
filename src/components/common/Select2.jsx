@@ -1,20 +1,10 @@
-import React, {useEffect, useRef} from 'react'
+import React from 'react'
 
 
 function Select2({label, option, id, selected, selectedId }) {
 
-    const x = document.getElementsByClassName("selectName")
+    const handleChange = (ev) => selected(ev) 
     
-    const handleChange = (ev) =>{
-        selected(ev) 
-        //alert("select " + ev)
-    }
-    // console.log("selectedId " + numId + 1) 
-    // //const setName = () => x[selectedId].setAttribute("selected", "")
-    // useEffect(()=>{
-    //     //setName()
-    // },[])
-
     return (
         <div className="form-group" >
             

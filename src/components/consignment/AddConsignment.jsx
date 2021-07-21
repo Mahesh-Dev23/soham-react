@@ -10,7 +10,7 @@ import DatePicker from '../common/DatePicker'
 import  { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css' 
 import getConsignments from '../crud/consignmentApi'
-import getNames from '../crud/api'
+
 
 const consignment = {
     client: '',
@@ -48,9 +48,9 @@ function AddConsignment({onclick, clientId, clientName, seltectedConsignerFromCl
     const [weight, setWeight] = useState(0)
     const payment = ["To Pay", "Paid"]
     const [consignmentRec, setConsignmentRec] = useState([])
-    //let addConsignment 
+    
     //console.log(" unloading: " + new Date(loadingDate) + 2 )
-    console.log(consignmentRec.length)
+    //console.log(consignmentRec.length)
     const captureModal = useContext(VisitTrack)
 
     // get value of selected cilent
@@ -60,15 +60,13 @@ function AddConsignment({onclick, clientId, clientName, seltectedConsignerFromCl
     
     let clientNameSelect = captureNamesFromData.map(name => name.clientName)
     
-    //let clientNameSelect = captureNamesFromData.map(name => name.id + " " +name.clientName)
-    //let selectedConsigner = getConsigner.map(name => name)
+    
     const selectedName = e =>{ setgetClient(e)}
     const x = document.getElementById("addCons")
     const constLength = parseInt(consignmentRec.length) + 1 // for id of new consignment
-    console.log(constLength + 1)
+    //console.log(constLength + 1)
     const getConsignerId = () =>{
         if(clientId){
-            //getClientId = clientNameSelect.indexOf(clientId) // from client page
             getClientId = clientId // from client page           
         }else{
             getClientId = getClient
@@ -85,32 +83,24 @@ function AddConsignment({onclick, clientId, clientName, seltectedConsignerFromCl
     },[] )
     
     
-    
-    // const getConsignerNames = async () => {
-    //     return await axios.get(`http://localhost:5000/client/${getClientId}`) 
-    //    .then(res =>  setConsigern(res.data.consigner) )
-    // }
-
     const getConsignerNames = () => {
         captureNamesFromData.filter( (value, index) => {
             if (value.clientName === getClientId){
                 setConsigern(value.consigner)
-                //initailConsigner = value.consigner
             }
         })
-        console.log(getClientId)
-       // getNames(v).then(res => setConsigern(res.consigner) )
+        //console.log(getClientId)
     
     }
 
-     console.log("..." + getConsigner)
+     //console.log("..." + getConsigner)
 
     useEffect (()=>{
         
         getConsignerNames() 
     },[getClientId])
 
-    console.log("cons: " + getConsigner)
+    //console.log("cons: " + getConsigner)
 
 
 
@@ -120,8 +110,7 @@ function AddConsignment({onclick, clientId, clientName, seltectedConsignerFromCl
             for (i = 0; i < x.length ; i++) {
                 selectedConsignment.push(x.elements[i].value)
             }
-            // const unloading = () => {if (selectedConsignment[5] = ''){return (selectedConsignment[4].slice(0, 5) + " U")}}
-            // unloading()
+            
             const PoD = selectedConsignment[4].slice(0, 5) + " U"
             newConsignment = {
                 client: selectedConsignment[0] + "/" + PoD + "/" + constLength, 
@@ -205,12 +194,8 @@ function AddConsignment({onclick, clientId, clientName, seltectedConsignerFromCl
                     </div>
                 </form>
                 <button className="formButton" onClick={consignementResponce} >Submit</button>
-                    
                 </div>
-                
             </div>
-            
-        
     )
 }
 

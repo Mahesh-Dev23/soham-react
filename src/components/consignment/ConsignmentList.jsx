@@ -1,15 +1,12 @@
-import React, {useContext, useState, useEffect} from 'react'
-import { Consignments } from '../../App'
-import { FiTrash2 } from 'react-icons/fi'
+import React, {useContext} from 'react'
+
 import { FiEdit } from 'react-icons/fi'
-import { FiFilePlus } from 'react-icons/fi'
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; 
 import {VisitTrack} from '../../App'
-import axios from 'axios'
 
-function ConsignmentList({resConsgn, clickedId, todayInSeconds, clickedName, sortColumn}) {
-    //const captureConsignmentsFromData = useContext(Consignments)
+function ConsignmentList({resConsgn, clickedId, todayInSeconds}) {
+    
     const captureModal = useContext(VisitTrack)
     const colorStateGreen = "#9acd32"
     const colorStateGray = "#888888"
@@ -30,13 +27,7 @@ function ConsignmentList({resConsgn, clickedId, todayInSeconds, clickedName, sor
         captureModal.countDispatch({type:'modal',  modal: true, value: ''})
     }
     
-    // delete client
-    const delCons = async (e) => {
-        console.log(e)
-       // return await axios.delete(`http://localhost:5000/client/${e}`)
-    }
-    delCons()
-
+   
     let consStatus = "L"
     let statColor
 
@@ -133,9 +124,6 @@ function ConsignmentList({resConsgn, clickedId, todayInSeconds, clickedName, sor
                         <h4 style={{color:`${colorStateGray}`}}>{resConsgn.payment}</h4>
                     </div>
                     
-                    
-                
-                    
                     <div className="listButtons tooltip"  >
                         <button type="button"  className="roundClick" onClick={()=> getEditId(resConsgn.id, resConsgn.client)}> <FiEdit /> </button>
                         <Tippy content={`book: ${resConsgn.book}, page: ${resConsgn.page}, ${resConsgn.remark}, ${resConsgn.tempo}`}><button type="button"  className="roundClick" style={{background:`${statColor}`}}>{consStatus} </button></Tippy>
@@ -144,9 +132,6 @@ function ConsignmentList({resConsgn, clickedId, todayInSeconds, clickedName, sor
                
             </div>
                 
-            
-           
-            
         </div>
     )
 }

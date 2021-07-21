@@ -1,7 +1,7 @@
-import react, {useState, useEffect} from 'react'
+import react, {useState} from 'react'
 
 function Pagination({listData, len, entries}) {
-    const getData = [listData]
+    
     const [currentPage, setCurrentPage] = useState(1)
     const [postPerPage, setPostPerPage] = useState(entries)
 
@@ -27,9 +27,7 @@ function Pagination({listData, len, entries}) {
                 {pageNumber.map( number => 
                     <li key={number} onClick={()=> paginate(number)} href="!#">
                             {number}
-                        
                     </li>)}    
-                   
             </ul>
             
         </>

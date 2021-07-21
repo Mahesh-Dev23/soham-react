@@ -15,7 +15,6 @@ export default function LoadUnload({todayInSeconds}) {
     const[idNew, setIdNew] = useState()
     const[client, setClient ] = useState()
     const [modal , setModal] = useState(false)
-    const [consignment, setConsignment] = useState([])
     const [sortColumn, setSortColumn] = useState()
 
     const captureSearchTerm = useContext(VisitTrack)

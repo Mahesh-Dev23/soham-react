@@ -5,12 +5,9 @@ import 'react-toastify/dist/ReactToastify.css'
 
 import Select2 from '../common/Select2'
 import axios from 'axios'
-import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-import { FiTrash2 } from 'react-icons/fi'
 import { FiRefreshCw } from 'react-icons/fi'
 import {VisitTrack} from '../../App'
-import Input from '../common/Input'
 
 
 const consignment = {
@@ -43,39 +40,25 @@ function EditConsignment({nameC, id, noId, onclick}) {
     const [resetPkg, setRestPkg] = useState()
     const [getConsigner, setConsigern] = useState()
     const [loadingDate, setLoadingDate] = useState()
-    const [newLoadingDate, setNewLoadingDate] = useState()
-    //     const [unLoadingDate, setunLoadingDate] = useState()  
+      
     
     
 
-    const closeUpdates = (e) =>{
-                noId(e)
-            }
-            console.log(id)
+    const closeUpdates = (e) => noId(e)
+    //console.log(id)
+
     const getCons = async () =>  await axios.get(`http://localhost:5000/consignments/${id}`)        
     
-//     const [clientNameId, setClientNameId] = useState()
-    
-    
-        const [consUpdate, setConsUpdate] = useState()
+
         let selectedConsignment = [] // submit values
         const x = document.getElementById("addCons")
         let updateConsignment 
     
-    
-    
-    
-//     //const clientNameToArray = new Array(clientNameSelect)
-//     console.log("This time: " + clientNameSelect)
-//     //console.log("gotname " + captureNamesFromData[10].clientName + clientNameSelect.length)
         const payment = ["Paid", "To Pay", "Billed"]
-    
-    
-    
     
      
     const editClient =  () => getCons().then(res=> {
-//         setConsUpdate(res.data.id)
+
             setConsigern(res.data.consigner)
             setCons({...cons, consignee: `${res.data.consignee}`, 
             PoD:`${res.data.Pod}`, 
@@ -112,17 +95,12 @@ function EditConsignment({nameC, id, noId, onclick}) {
             setMinus(0)
         }
     
-        
-
 
         useEffect(()=>{ 
-//         //setClientNameId(clientNameSelect.indexOf("Abbas") + 1)
             editClient() 
-            resetPackage()
-//         setCons({...cons, loading: loadingDate, UnLoading: unLoadingDate})
-        
+            resetPackage()      
         },[])
-        //let load = cons.loading.toString().slice(0,2) + "/" + cons.loading.toString().slice(3,5) + "/" + cons.loading.toString().slice(6)
+       
        const consignementUpdate = () =>{
         setMinus(selectedConsignment[10])
         let i
@@ -163,12 +141,7 @@ function EditConsignment({nameC, id, noId, onclick}) {
         toast.success("Consignment is updated", {position: toast.POSITION.BOTTOM_CENTER})
         
         }
-//     console.log("cons: " + selectedConsignment)
-//     const selectedName = () =>{
-
-//     }
-
-    
+   
 
     return (
         <div className="consUpdate">
@@ -189,10 +162,9 @@ function EditConsignment({nameC, id, noId, onclick}) {
                         <div className="form-group" >
                             <label className="form-input-label">Unloading</label>
                             <input  value={cons.UnLoading} onChange={e=>setCons({...cons,UnLoading: e.target.value})} style={{width: "140px"}}/>
-                            {/* <button className="button" style={{marginLeft: "-70px"}} onClick={unLoadingNew}>Change Date</button> */}
+                            
                         </div> 
-                        {/* <DatePicker selected={cons.loading.toString()} dateFormat='dd/MM/yyyy'  openToDate={new Date(cons.loading.toString())} /> */}
-                        {/* <DatePicker label={`Unoading: ${cons.UnLoading}`} selected={unLoadingDate} newDate={setunLoadingDate} min={loadingDate} /> */}
+                       
                            
                         <div className="form-group" >
                             <label className="form-input-label" >PoD</label>
@@ -261,16 +233,7 @@ function EditConsignment({nameC, id, noId, onclick}) {
             </form>
             <button className="formButton" onClick={() => consignementUpdate()} >Submit</button> 
             <button type="button"  className="roundButton" onClick={() => closeUpdates()}> X </button>
-            
-            {/* <div >
-                <DatePicker 
-                        selected={newLoadingDate} 
-                        dateFormat='dd/MM/yyyy'  
-                        onChange={date => setNewLoadingDate(date)} 
-                        withPortal
-                        openToDate={new Date(loadingDate)}/>
-            </div> */}
-        
+                   
         </div>
     )
 }

@@ -13,13 +13,13 @@ function ScheduleList() {
             <div className="resultBox" style={{marginLeft:"250px", marginRight:"20px", height:"480px", overflowY: "scroll"}}>
                 <h5>Deliveries ahead</h5>  
                 { captureConsignmentsFromData.map(res =>
-                     res.delv >= today ? <h4 style={{marginTop:"5px"}}>{`${res.delivery},  ${res.client}, Pkg: ${res.package}`}</h4> : null
+                     res.delv >= today ? <h4 key={res.client} style={{marginTop:"5px"}}>{`${res.delivery},  ${res.client}, Pkg: ${res.package}`}</h4> : null
                     )}
             </div>
             <div className="resultBox" style={{height:"480px", overflowY: "scroll"}}>
                 <h5>Unloading ahead</h5> 
                 { captureConsignmentsFromData.map(res =>
-                    res.unload >= today ? <h4 style={{marginTop:"5px"}}>{`${res.uloading},  ${res.client}, Pkg: ${res.package}`}</h4> : null
+                    res.unload >= today ? <h4 key={res.client} style={{marginTop:"5px"}}>{`${res.uloading},  ${res.client}, Pkg: ${res.package}`}</h4> : null
                     )}
             </div>
             <Nav />

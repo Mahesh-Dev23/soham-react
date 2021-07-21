@@ -1,11 +1,10 @@
-import React from 'react'
+
 
 
 const datefunctions = new Promise(function(myResolve, myReject) {
     const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
     const day = new Date()
-    //let today = ''
-    //const thisDay = DateInt(today) 
+  
     
     console.log(day.getDate() + " " + months[day.getMonth()] + " " + day.getFullYear())
     let getMonth = day.getMonth()

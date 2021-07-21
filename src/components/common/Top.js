@@ -8,9 +8,20 @@ function Top({today, stateColor}) {
     return (
         <>
         <div className="welcome">
-            <div className="caption"><h4>Welcome to <span style={{color: stateColor }}>Soham Logistics</span></h4></div>
-            <div className="datePad"> <h5>Search by Date</h5>   <SearchByDate /></div>
-            <div className="today" onClick={()=>scheduleOpen(true)} >{today}</div>
+            <div className="caption">
+                <h4>
+                    Welcome to <span style={{color: stateColor }}>Soham Logistics</span>
+                </h4>
+            </div>
+            <div className="datePad"> 
+                <h5>
+                    Search by Date
+                </h5>   
+                <SearchByDate />
+            </div>
+            <div className="today" onClick={()=>scheduleOpen(true)} >
+                {today}
+            </div>
         </div>
         {schedule ? <Schedule closeSchedule={setSchedule}/> : null}
         </>

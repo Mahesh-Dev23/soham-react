@@ -1,6 +1,6 @@
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2';
-function StockStatus({total, stock, paid, unpaid, paidColor, unpaidColor}) {
+function StockStatus({total, stock, paid, unpaid}) {
     const data = {
         
         datasets: [
